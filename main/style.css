@@ -1,0 +1,145 @@
+body {
+    background-color: #9cdbeb;
+    text-align: center;
+    font-family: fantasy, copperplate;
+    margin: 20px 30px 50px 30px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #ffd0df;
+    text-shadow: -10px 10px #7594bb;
+}
+
+h2 {
+    text-align: left;
+    color: #7594bb;
+    background-color: white;
+}
+
+p {
+    color: #7594bb;
+    background-color: white;
+    font-size: 20px;
+}
+
+.hebrewP {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+/* VIDEO BACKGROUND */
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* TEXT SELECTION */
+::selection {
+    color: #ffd0df;
+    background-color: #ffaec9;
+}
+
+/* LINKS */
+a:hover {
+    color: #ffaec9;
+}
+
+.recipeLinks {
+    font-size: 50px;
+    text-shadow: -5px 5px #7594bb;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* FLEXBOX LAYOUT FOR RECIPE SECTION */
+.recipeSection {
+    margin-bottom: 80px;
+}
+
+.recipeItems {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.recipeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* RECIPE IMAGES */
+.recipePics {
+    width: 100%;
+    height: 230px;
+    max-width: 320px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+}
+
+.recipePics img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* IMAGE HOVER */
+.recipePics:hover .imgOne {
+    content: url("./Pics/Pasta.jpeg");
+}
+
+.recipePics:hover .imgTwo {
+    content: url("./Pics/Sauce.jpg");
+}
+
+.recipePics:hover .imgThree {
+    content: url("./Pics/Chicken.jpg");
+}
+
+/* RESPONSIVE GAME CANVAS */
+.game {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#board {
+    width: 100%;
+    max-width: 790px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-image: url("./Pics/Game/Background.png");
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .recipeLinks {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
